@@ -4,7 +4,16 @@ import { NavLink } from 'react-router-dom';
 
 function Navigation() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar 
+      variant="dark" 
+      expand="lg"
+      style={{
+        backgroundColor: 'rgba(18, 18, 18, 0.75)',
+        backdropFilter: 'blur(8px)',
+        boxShadow: '0 2px 12px rgba(0,0,0,0.7)',
+        borderBottom: '1px solid rgba(255,255,255,0.05)',
+      }}
+    >
       <Container>
         <Navbar.Brand as={NavLink} to="/">
           Andrew Carter
