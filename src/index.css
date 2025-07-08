@@ -1,6 +1,9 @@
-body, html, #root {
-  margin: 0; padding: 0; height: 100%;
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background: linear-gradient(135deg, #121212 0%, #1e1e2f 100%);
   color: #ddd;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden; /* avoid horizontal scroll */
 }
