@@ -1,0 +1,29 @@
+name: Deploy to Linux Server
+
+on:
+  push:
+    branches:
+      - master  # or main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_SSH_HOST }}
+          username: ${{ secrets.SERVER_SSH_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 22
+          script: |
+            cd /var/www/andrewc.dev/src
+            git pull origin master
+            npm install
+            npm run build
+            rm -rf /var/www/andrewc.dev/public/*
+            cp -r build/* /var/www/andrewc.dev/public/
