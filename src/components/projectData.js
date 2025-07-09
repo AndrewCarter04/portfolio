@@ -1,5 +1,4 @@
 import clickasnapHackathon, { meta as clickasnapHackathonMeta } from '../pages/projects/clickasnap-hackathon';
-import teemillClickasnapHackathon, { meta as teemillClickasnapHackathonMeta } from '../pages/projects/teemill-clickasnap-hackathon';
 import appCwk, { meta as appCwkMeta } from '../pages/projects/app-cwk';
 import discordBots, { meta as discordBotsMeta } from '../pages/projects/discord-bots';
 import obomt, { meta as obomtMeta } from '../pages/projects/obomt';
@@ -26,10 +25,6 @@ export const projects = [
   {
     component: appCwk,
     ...appCwkMeta,
-  },
-  {
-    component: teemillClickasnapHackathon,
-    ...teemillClickasnapHackathonMeta,
   },
   {
     component: clickasnapHackathon,
