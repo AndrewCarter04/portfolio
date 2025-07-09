@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
           script: |
-            export NVM_DIR="/home/deployportfolio/.nvm"
+            export NVM_DIR="/home/${{ secrets.SERVER_SSH_USER }}/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
             
             cd /var/www/andrewc.dev/src || exit 1
