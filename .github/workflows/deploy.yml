@@ -32,6 +32,5 @@ jobs:
             npm run build
             rm -rf /var/www/andrewc.dev/public/*
             cp -r build/* /var/www/andrewc.dev/public/
-            chown -R www-data:www-data /var/www/andrewc.dev/public
             find /var/www/andrewc.dev/public -type d -exec chmod 755 {} \;
             find /var/www/andrewc.dev/public -type f -exec chmod 644 {} \;
