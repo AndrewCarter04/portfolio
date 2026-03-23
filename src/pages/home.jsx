@@ -20,7 +20,7 @@ const Home = () => {
             className="lead"
             style={{ fontWeight: 600, fontSize: '1.35rem', color: '#ddd', lineHeight: 1.5 }}
           >
-            I'm a Software Developer and Cyber Security graduate based in the UK,
+            I'm a Software Developer, Postgraduate Research student and Cyber Security graduate based in the UK,
             passionate about creating web applications and automation tools that
             make computing accessible to everyone, even without specialist knowledge.
           </p>
@@ -37,10 +37,16 @@ const Home = () => {
           <br />
 
           <p style={{ fontWeight: 500, fontSize: '1.2rem', color: '#ccc', lineHeight: 1.5 }}>
-            I've been recognized with multiple hackathon awards, including the
+            I've been recognized with multiple awards, including the
             <strong> Teamwork Award</strong> at the BU X ClickASnap Hackathon (March 2023) and the
             <strong> Development Award</strong> at the Bournemouth University X Teemill & ClickASnap
             Hackathon (November 2023).
+          </p>
+
+          <p style={{ fontWeight: 500, fontSize: '1.2rem', color: '#ccc', lineHeight: 1.5 }}>
+            My work has also been recongised within the Student Radio community. During summer 2025, I designed, engineered and executed
+            Nerve Radio's first broadcast from the <a href="https://www.subu.org.uk" target="_blank" rel="noreferrer" style={{ color: '#aad' }}>SUBU</a> Summer Ball, including custom software development.
+            This broadcast later went on to win a Gold and Silver award at the Student Radio Awards 2025.
           </p>
 
           <br />
@@ -49,7 +55,7 @@ const Home = () => {
             Outside coding, I’m an active open source contributor and involved with
             student radio. I also enjoy gaming and hosting a weekly show on <a href="https://player.nervemedia.org.uk" target="_blank" rel="noreferrer" style={{ color: '#aad' }}>
               Nerve Radio
-            </a>.
+            </a>. I am also the current President of the Gaming Society at Bournemouth University.
           </p>
 
           <br />
@@ -60,11 +66,6 @@ const Home = () => {
           </p>
 
           <br />
-
-          <p style={{ fontWeight: 500, fontSize: '1.2rem', color: '#ccc', lineHeight: 1.5 }}>
-            This September 2025, I’ll be starting my Masters by Research at
-            Bournemouth University to deepen my expertise in cyber security.
-          </p>
 
           <p className="mt-4">
             <Button href="/projects" variant="primary" size="lg" className="me-3 px-4">
