@@ -3,6 +3,18 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const awardsList = [
   {
+    title: "Gold - Best Event Programming - Summer Ball (Student Radio Awards)",
+    year: 2025,
+    description:
+      'For my work leading the first festival outside broadcast for Nerve Radio, the production of the broadcast and the community impact',
+  },
+  {
+    title: "Silver - Best Technical Achievement - Summer Ball & OBOMT (Student Radio Awards)",
+    year: 2025,
+    description:
+      'For my engineering, setup and broadcast engineering of the Summer Ball outside broadcast, as well as the development of an open source monitoring tool, OBOMT',
+  },
+  {
     title: "SUBU 'Start of the Year'",
     year: 2025,
     description:
