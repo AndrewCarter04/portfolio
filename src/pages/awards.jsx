@@ -3,6 +3,12 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const awardsList = [
   {
+    title: "Silver - Student Radio Moment of the Year - Summer Ball (Amplify Awards)",
+    year: 2026,
+    description:
+      'For my work leading the broadcast quality and crowd ambience capture for Nerve Radio',
+  },
+  {
     title: "Gold - Best Event Programming - Summer Ball (Student Radio Awards)",
     year: 2025,
     description:

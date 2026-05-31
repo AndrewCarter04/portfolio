@@ -17,13 +17,25 @@ const About = () => {
       <h3 className="mt-5 mb-3" style={{ fontWeight: '600' }}>Education</h3>
       <Card className="bg-dark text-light mb-4">
         <Card.Body>
+          <Card.Title>Master's by Research</Card.Title>
+          <Card.Subtitle className="mb-2 d-flex align-items-center gap-2" style={{ color: '#aaa', fontSize: '0.95rem' }}>
+            <img src="/logos/bu.png" alt="BU Logo" style={{ height: '24px' }} />
+            Bournemouth University — Sep 2025 to Aug 2026
+          </Card.Subtitle>
+          <Card.Text>
+            Thesis Title: Secure, Multi-Platform Credential Management System for Community Driven Digital Infrastructure
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card className="bg-dark text-light mb-4">
+        <Card.Body>
           <Card.Title>BSc (Hons) Forensic Computing & Security</Card.Title>
           <Card.Subtitle className="mb-2 d-flex align-items-center gap-2" style={{ color: '#aaa', fontSize: '0.95rem' }}>
             <img src="/logos/bu.png" alt="BU Logo" style={{ height: '24px' }} />
             Bournemouth University — Sep 2022 to Jul 2025
           </Card.Subtitle>
           <Card.Text>
-            Focused on cyber security, digital forensics, and software development. 
+            Focused on cyber security, digital forensics, and software development.
             (See <a href="/awards" style={{ color: '#aad' }}>Awards</a>)
           </Card.Text>
         </Card.Body>
