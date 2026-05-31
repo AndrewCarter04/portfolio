@@ -1,7 +1,15 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import FadeIn from '../components/fadeIn';
+import AnimatedCard from '../components/animatedCard';
 
 const awardsList = [
+  {
+    title: "Silver - Student Radio Moment of the Year - Summer Ball (Amplify Awards)",
+    year: 2026,
+    description:
+      'For my work leading the broadcast quality and crowd ambience capture for Nerve Radio',
+  },
   {
     title: "Gold - Best Event Programming - Summer Ball (Student Radio Awards)",
     year: 2025,
@@ -38,30 +46,35 @@ const awardsList = [
     description:
       'Teamwork Award winners in the Bournemouth University X ClickASnap Hackathon in March 2023',
   },
-  // add more
 ];
 
 const Awards = () => {
   return (
     <Container className="py-5 text-light">
-      <h2 className="mb-4" style={{ fontWeight: '700' }}>
-        Achievements & Awards
-      </h2>
+      <FadeIn direction="up">
+        <h2 className="mb-4" style={{ fontWeight: '700' }}>
+          Achievements & Awards
+        </h2>
+      </FadeIn>
 
       <Row xs={1} md={2} lg={3} className="g-4">
         {awardsList.map((award, idx) => (
           <Col key={idx}>
-            <Card className="bg-dark text-light h-100 shadow-sm">
-              <Card.Body>
-                <Card.Title>
-                  {award.title}{' '}
-                  <small className="mb-2" style={{ color: '#aaa', fontSize: '0.95rem' }}>
-                    ({award.year})
-                  </small>
-                </Card.Title>
-                <Card.Text style={{ color: '#ccc' }}>{award.description}</Card.Text>
-              </Card.Body>
-            </Card>
+            <FadeIn direction="up" delay={idx * 0.08}>
+              <AnimatedCard>
+                <Card className="bg-dark text-light shadow-sm" style={{ height: '100%' }}>
+                  <Card.Body>
+                    <Card.Title>
+                      {award.title}{' '}
+                      <small className="mb-2" style={{ color: '#aaa', fontSize: '0.95rem' }}>
+                        ({award.year})
+                      </small>
+                    </Card.Title>
+                    <Card.Text style={{ color: '#ccc' }}>{award.description}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </AnimatedCard>
+            </FadeIn>
           </Col>
         ))}
       </Row>

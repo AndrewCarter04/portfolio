@@ -43,7 +43,7 @@ function Navigation() {
             <Nav.Link href="https://www.linkedin.com/in/andrewcarter04/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin size={22} />
             </Nav.Link>
-            <Nav.Link href="https://instagram.com/andrew.carter04" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <Nav.Link href="https://instagram.com/andrewcartertech" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram size={22} />
             </Nav.Link>
           </Nav>
