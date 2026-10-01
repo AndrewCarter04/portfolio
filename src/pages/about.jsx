@@ -31,7 +31,7 @@ const About = () => {
               <Card.Title>Master's by Research</Card.Title>
               <Card.Subtitle className="mb-2 d-flex align-items-center gap-2" style={{ color: '#aaa', fontSize: '0.95rem' }}>
                 <img src="/logos/bu.png" alt="BU Logo" style={{ height: '24px' }} />
-                Bournemouth University — Sep 2025 to Aug 2026
+                Bournemouth University — Sep 2025 to Present
               </Card.Subtitle>
               <Card.Text>
                 Thesis Title: Secure, Multi-Platform Credential Management System for Community Driven Digital Infrastructure
@@ -70,7 +70,7 @@ const About = () => {
             title: 'Student Ambassador',
             logo: '/logos/bu.png',
             logoAlt: 'BU Logo',
-            tenure: 'Bournemouth University — Jun 2023 to Present',
+            tenure: 'Bournemouth University — Jun 2023 to Aug 2026',
             body: 'Supporting university open days by delivering campus tours, answering questions from prospective students, and helping them feel confident and welcomed.',
           },
           {
